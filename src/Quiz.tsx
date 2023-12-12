@@ -4,8 +4,12 @@ import Question from "./Question";
 import { AnswerType } from "./types";
 
 const Quiz: React.FC = () => {
+  const normalizedQuestions = Object.values(questions)
+    .map((item) => [...item])
+    .flat();
+
   // Initialize answers with an empty array or empty string for each question based on answerType
-  const initialAnswers = questions.reduce((acc, question) => {
+  const initialAnswers = normalizedQuestions.reduce((acc, question) => {
     acc[question.id] = question.answerType === "multiple" ? [] : "";
     return acc;
   }, {} as AnswerType);
@@ -20,8 +24,10 @@ const Quiz: React.FC = () => {
       const updatedAnswers = { ...prevAnswers, [questionId]: answer };
 
       // Update progress by checking how many questions have been answered
-      const answeredQuestions = Object.values(updatedAnswers).filter((a) => (Array.isArray(a) ? a.length > 0 : a !== "")).length;
-      const totalQuestions = questions.length;
+      const answeredQuestions = Object.values(updatedAnswers).filter((a) =>
+        Array.isArray(a) ? a.length > 0 : a !== ""
+      ).length;
+      const totalQuestions = normalizedQuestions.length;
       const newProgress = (answeredQuestions / totalQuestions) * 100;
       setProgress(newProgress);
 
@@ -71,23 +77,41 @@ const Quiz: React.FC = () => {
   return (
     <div>
       <div className="progress-bar-container">
-        <div className="progress-bar" style={{ width: `${progress}%`, backgroundColor: progress === 100 ? "#4caf50" : "#9b9695" }}></div>
+        <div
+          className="progress-bar"
+          style={{
+            width: `${progress}%`,
+            backgroundColor: progress === 100 ? "#4caf50" : "#9b9695",
+          }}
+        >
+          {Math.floor(progress)}%
+        </div>
       </div>
-      <div style={{ paddingTop: "25px" }}>
-        {" "}
-        {/* Add padding to avoid overlapping with the progress bar */}
-        {questions.map((question, index) => (
-          <Question key={question.id} number={index + 1} data={question} selectedAnswers={answers[question.id]} onChange={handleAnswerChange} />
+      <div>
+        {normalizedQuestions.map((question, index) => (
+          <Question
+            key={question.id}
+            number={index + 1}
+            data={question}
+            selectedAnswers={answers[question.id]}
+            onChange={handleAnswerChange}
+          />
         ))}
-        <button onClick={handleSubmit}>Submit Answers</button>
+        <button onClick={handleSubmit} disabled={progress !== 100}>
+          Submit Answers
+        </button>
       </div>
       {showSummary && (
         <div className="modal">
           <div className="modal-content">
             <h2>Quiz Summary</h2>
             <pre id="summary-content">{JSON.stringify(answers, null, 2)}</pre>
-            <button onClick={handleCopyToClipboard}>{copiedToClipboard ? "Copied" : "Copy to Clipboard"}</button>
-            <button onClick={closeModal}>Close</button>
+            <button style={{ width: "200px" }} onClick={handleCopyToClipboard}>
+              {copiedToClipboard ? "Copied" : "Copy to Clipboard"}
+            </button>
+            <button style={{ width: "200px" }} onClick={closeModal}>
+              Close
+            </button>
           </div>
         </div>
       )}

@@ -10,7 +10,7 @@ const typeAnnotationQuestions: QuestionType[] = [
       "let age = 25 as number;",
       "let number age = 25;",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "dfbb3658-2ec7-4394-ab81-a89b5e343b33",
@@ -21,7 +21,7 @@ const typeAnnotationQuestions: QuestionType[] = [
       "Automatically initializing variables",
       "Enhancing JavaScript syntax",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "7a437f8d-a3ed-4b8d-a1b3-b953134f2de5",
@@ -46,7 +46,7 @@ const interfaceQuestions: QuestionType[] = [
       "A built-in data type for managing arrays",
       "A tool for optimizing TypeScript code performance",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "6b887f4c-7f10-4b94-8558-73e386680d61",
@@ -57,7 +57,7 @@ const interfaceQuestions: QuestionType[] = [
       "Interfaces are used to define the shape of an object",
       "Interfaces are converted into JavaScript objects after compilation",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "ee2ccfcf-a1b8-48e1-be55-c8bbd92e77db",
@@ -68,7 +68,7 @@ const interfaceQuestions: QuestionType[] = [
       "To provide a contract for classes and objects to follow",
       "For runtime type checking of objects",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -82,7 +82,7 @@ const classesQuestions: QuestionType[] = [
       "TypeScript classes do not support method overloading",
       "Private class members in TypeScript are also private in the compiled JavaScript",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "4d4570f0-fd56-4df9-81ad-1fb370eb8608",
@@ -93,7 +93,7 @@ const classesQuestions: QuestionType[] = [
       "class Person { new(name: string) { this.name = name; } }",
       "class Person { Person { constructor(name: string) } }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "7f96f3b2-c578-445c-abda-f4b12628a0a2",
@@ -104,7 +104,7 @@ const classesQuestions: QuestionType[] = [
       "To inherit properties and methods from another class",
       "To declare that a class implements an interface",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -118,7 +118,7 @@ const enumsQuestions: QuestionType[] = [
       "A tool for error handling",
       "An interface for user-defined data types",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "bec604a9-e486-4d76-8264-f65000891dd0",
@@ -129,7 +129,7 @@ const enumsQuestions: QuestionType[] = [
       "It becomes a set of named constants with assigned values",
       "It transforms into a class with static properties",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "15ad97ec-3619-42a1-a7e9-1c56f52712a2",
@@ -140,7 +140,7 @@ const enumsQuestions: QuestionType[] = [
       "enum Color { Red = 1, Green, Blue }",
       "class Color { static Red; static Green; static Blue; }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -154,7 +154,7 @@ const genericsQuestions: QuestionType[] = [
       "For optimizing runtime performance",
       "To define enum types",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "838e3c43-8fb5-4c06-bf24-8e25af8d6143",
@@ -165,7 +165,7 @@ const genericsQuestions: QuestionType[] = [
       "function <T>identity(arg: T): T { return arg; }",
       "generic function identity<T>(arg: T): T { return arg; }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "a912c1c4-8096-457d-b87f-2171b664886a",
@@ -176,7 +176,7 @@ const genericsQuestions: QuestionType[] = [
       "Generics allow you to create classes, functions, and interfaces that work with any type",
       "Generics increase the runtime overhead of code",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -190,7 +190,7 @@ const typeGuardsQuestions: QuestionType[] = [
       "To encrypt sensitive data types",
       "To guard against runtime exceptions",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "9153959c-3c81-4036-aa99-530764174ee8",
@@ -201,7 +201,7 @@ const typeGuardsQuestions: QuestionType[] = [
       "if (variable.stringCheck()) { /* ... */ }",
       "if (variable === 'string') { /* ... */ }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "6d31e0ce-c6cc-4391-bb85-f2350d4cdfae",
@@ -212,7 +212,7 @@ const typeGuardsQuestions: QuestionType[] = [
       "Ensuring that a variable is of a certain type before performing an operation",
       "Handling HTTP requests",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -226,7 +226,7 @@ const tuplesQuestions: QuestionType[] = [
       "A method for handling exceptions",
       "A feature for asynchronous programming",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "6ceaa4e5-b8c0-4b2b-aabc-a963c26e688d",
@@ -237,7 +237,7 @@ const tuplesQuestions: QuestionType[] = [
       "let x: tuple[string, number] = ['hello', 10];",
       "let x: (string, number) = ['hello', 10];",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "b4a0fbc8-0a39-4e7f-8c1f-7f8f7a1e4b5c",
@@ -250,7 +250,7 @@ const tuplesQuestions: QuestionType[] = [
       "TypeScript will automatically extend the tuple",
       "It results in a runtime error",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -264,7 +264,7 @@ const unionTypesQuestions: QuestionType[] = [
       "Merging two arrays into one",
       "Creating interfaces with optional properties",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "9ad7d6b5-7bdf-4ae2-b8c0-6b0c59f8c791",
@@ -275,7 +275,7 @@ const unionTypesQuestions: QuestionType[] = [
       "let value: [string | number] = 'Hello';",
       "let value: string || number = 42;",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "acefb001-9f60-4d49-9a6f-5a3f6b65478e",
@@ -286,7 +286,7 @@ const unionTypesQuestions: QuestionType[] = [
       "By declaring all possible types at the beginning of your script",
       "Union Types in TypeScript do not support type safety",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -300,7 +300,7 @@ const intersectionTypesQuestions: QuestionType[] = [
       "A type used exclusively for user interface components",
       "A type that divides an array into two halves",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "f87c2f0d-2f62-4c00-ba4a-9c2f3b841ef6",
@@ -311,7 +311,7 @@ const intersectionTypesQuestions: QuestionType[] = [
       "type Employee = Person || Job;",
       "type Employee = Person - Job;",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "ffdb5756-7f76-4c63-9a2f-a4d69e875c32",
@@ -322,7 +322,7 @@ const intersectionTypesQuestions: QuestionType[] = [
       "For creating exclusive type choices in function parameters",
       "To intersect and remove common properties from types",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -336,7 +336,7 @@ const literalTypesQuestions: QuestionType[] = [
       "A method to write more literal and understandable code",
       "Types used for storing text data",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "ccdb6b94-ff0b-44ea-9a59-89bba4b1da77",
@@ -347,7 +347,7 @@ const literalTypesQuestions: QuestionType[] = [
       "let direction: ['north', 'south', 'east', 'west'];",
       "let direction: any = 'north' | 'south' | 'east' | 'west';",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "bb2c8b45-6f8e-4d3b-9a23-3cfbb6b6f3b7",
@@ -358,7 +358,7 @@ const literalTypesQuestions: QuestionType[] = [
       "As a replacement for enums",
       "For dynamic type assignments",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -372,7 +372,7 @@ const nullableTypesQuestions: QuestionType[] = [
       "Types that can be either a specific type or null/undefined",
       "Types that are automatically initialized to null",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "e7d4d22e-77c2-4b82-95d1-23a3e1bf9b2d",
@@ -383,7 +383,7 @@ const nullableTypesQuestions: QuestionType[] = [
       "let variable: number = null;",
       "let variable: null<number> = null;",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "f2b3f08d-28f6-4f1c-9e5f-32f5b7b1e5c9",
@@ -394,7 +394,7 @@ const nullableTypesQuestions: QuestionType[] = [
       "Ensures that all variables are checked for null or undefined values",
       "Prevents any use of null or undefined in the code",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -408,7 +408,7 @@ const typeAliasesQuestions: QuestionType[] = [
       "A TypeScript feature for aliasing functions",
       "A method to import types from other modules",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "a7d6e8f4-37eb-476b-8c24-5e07b41e9e2f",
@@ -419,7 +419,7 @@ const typeAliasesQuestions: QuestionType[] = [
       "define type Point = { x: number, y: number };",
       "Point := { x: number, y: number };",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "f2c1b4a2-bd7e-41be-9d07-5c6bd3f8a021",
@@ -430,7 +430,7 @@ const typeAliasesQuestions: QuestionType[] = [
       "To enhance the performance of TypeScript applications",
       "For creating exclusive types that cannot be extended",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -444,7 +444,7 @@ const mappedTypesQuestions: QuestionType[] = [
       "A technique to create new types by transforming existing ones",
       "Types that map directly to JSON objects",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "e3b5d85b-f6a3-41e5-9f67-2e23c8f3f0d1",
@@ -456,7 +456,7 @@ const mappedTypesQuestions: QuestionType[] = [
       "mapped type<T> = { [P in T]: P };",
       "type Transform<T> = { transform [P in keyof T] };",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "5c3b5d2c-6c4e-4f09-80a9-9dbf0f5d85e9",
@@ -467,7 +467,7 @@ const mappedTypesQuestions: QuestionType[] = [
       "For creating constants that can be used in multiple places",
       "To automatically generate types based on user input",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -481,7 +481,7 @@ const conditionalTypesQuestions: QuestionType[] = [
       "Types that change according to the environment",
       "Predefined types that are available in TypeScript",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "d7b8cfea-2d57-4a25-9d55-5f73e5f8f0e8",
@@ -492,7 +492,7 @@ const conditionalTypesQuestions: QuestionType[] = [
       "conditional type<T> = T is string ? 'String' : 'Non-String';",
       "type IfString<T> = T = string ? 'String' : 'Other';",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "1f0a67d8-38c3-4e8b-80d9-3e16b4a3a4c5",
@@ -503,7 +503,7 @@ const conditionalTypesQuestions: QuestionType[] = [
       "To provide a way to pick types based on generic type parameters",
       "For creating switch-case statements in type definitions",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -517,7 +517,7 @@ const decoratorsQuestions: QuestionType[] = [
       "A function used for styling components",
       "A tool for debugging TypeScript code",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "4b79f1be-60b1-4a5a-9b30-5b1b2f4cda98",
@@ -530,7 +530,7 @@ const decoratorsQuestions: QuestionType[] = [
       "sealed class Greeter { /* ... */ }",
       "@Decorator class Greeter { /* ... */ }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "9f9268fa-4149-4ee0-8c37-c3f5c67a4b0b",
@@ -541,7 +541,7 @@ const decoratorsQuestions: QuestionType[] = [
       "As a replacement for classes in TypeScript",
       "For enhancing the performance of class methods",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -555,7 +555,7 @@ const utilityTypesQuestions: QuestionType[] = [
       "A set of tools for managing TypeScript configurations",
       "Types that automatically adjust based on the user's utility preferences",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "e98c8a7b-c8d5-4b93-9a11-2b7d0175a49f",
@@ -568,7 +568,7 @@ const utilityTypesQuestions: QuestionType[] = [
       "type TodoPreview = Utility<Todo, 'title'>;",
       "type TodoPreview = Todo['title'];",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "e6d4f65c-1a6b-45e4-8b3f-4b3e7e6f7c99",
@@ -579,7 +579,7 @@ const utilityTypesQuestions: QuestionType[] = [
       "For creating user-defined type transformations",
       "To assist in migrating JavaScript code to TypeScript",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -593,7 +593,7 @@ const moduleAugmentationQuestions: QuestionType[] = [
       "A method for bundling multiple modules into one",
       "A tool for automatic module generation",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "8f58c16d-1a1e-4db9-8e6f-fb271b3dbb6e",
@@ -606,7 +606,7 @@ const moduleAugmentationQuestions: QuestionType[] = [
       "module 'some-module' { export interface NewInterface { /* ... */ } }",
       "extend module 'some-module' { export interface NewInterface { /* ... */ } }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "9c6f8ba9-7f24-4c0d-bd1f-dc79a6c54c0d",
@@ -617,7 +617,7 @@ const moduleAugmentationQuestions: QuestionType[] = [
       "To merge two different modules into one",
       "For creating a backup of a module",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -631,7 +631,7 @@ const namespacesQuestions: QuestionType[] = [
       "A tool for connecting TypeScript files to external APIs",
       "An alias for TypeScript modules",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "2b3f7b1e-5d17-4b8e-8f23-2e2e84b5b2f6",
@@ -642,7 +642,7 @@ const namespacesQuestions: QuestionType[] = [
       "MyNamespace { /* ... */ }",
       "declare namespace MyNamespace { /* ... */ }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "a1ecf4d6-06d8-4e3d-b7c7-0df3e4b4e3f1",
@@ -653,7 +653,7 @@ const namespacesQuestions: QuestionType[] = [
       "To export all types and interfaces by default",
       "To provide a naming convention for TypeScript projects",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -667,7 +667,7 @@ const advancedGenericsQuestions: QuestionType[] = [
       "A new feature in TypeScript for handling arrays and objects",
       "Generics that are automatically inferred by the TypeScript compiler",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "d2f0d0e2-6c12-4b38-9c70-6b5c8d8ac8f7",
@@ -679,7 +679,7 @@ const advancedGenericsQuestions: QuestionType[] = [
       "type Advanced<T> = T extends Function ? T : never;",
       "interface AdvancedGeneric<T> { data: T; }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "f5e5b8ff-a8ce-4b1e-b1b6-3d5e0a7a4e5e",
@@ -690,7 +690,7 @@ const advancedGenericsQuestions: QuestionType[] = [
       "To create highly reusable and type-safe code components",
       "For automating type checking in all parts of a TypeScript application",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -704,7 +704,7 @@ const mixinsQuestions: QuestionType[] = [
       "A tool for merging multiple classes into one",
       "Pre-built functions provided by TypeScript for array manipulation",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "4c84fba5-5c77-4fbb-9d47-5b3f7ef9cfc0",
@@ -717,7 +717,7 @@ const mixinsQuestions: QuestionType[] = [
       "mixin class SomeClass { /* ... */ }",
       "class SomeClass with Mixin { /* ... */ }",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "5d1d6c4e-ee2d-4fcd-83a2-34d2b2c8f3b2",
@@ -728,7 +728,7 @@ const mixinsQuestions: QuestionType[] = [
       "For adding new properties to an interface",
       "To provide a way of multiple inheritance",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
@@ -742,7 +742,7 @@ const advancedTypesQuestions: QuestionType[] = [
       "Complex type patterns and techniques used for more sophisticated type systems",
       "Predefined types that are only available in the latest version of TypeScript",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "a55b8a7e-0c5e-4d5a-a2b2-cb1f80a26f97",
@@ -753,7 +753,7 @@ const advancedTypesQuestions: QuestionType[] = [
       "type Chainable<T> = { option<K extends string>(key: K, value: any): Chainable<T & { [P in K]: any }>; };",
       "type Conditional<T> = T extends Function ? FunctionType : NonFunctionType;",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
   {
     id: "e0a4b6a1-e6ab-4f7a-aae5-16f4c3a1b545",
@@ -764,30 +764,30 @@ const advancedTypesQuestions: QuestionType[] = [
       "By automatically determining types without developer input",
       "They are mainly used for aesthetic purposes and do not enhance development",
     ],
-    answerType: "multiple",
+    answerType: "single",
   },
 ];
 
-export const questions: QuestionType[] = [
-  ...typeAnnotationQuestions,
-  ...interfaceQuestions,
-  ...classesQuestions,
-  ...enumsQuestions,
-  ...genericsQuestions,
-  ...typeGuardsQuestions,
-  ...tuplesQuestions,
-  ...unionTypesQuestions,
-  ...intersectionTypesQuestions,
-  ...literalTypesQuestions,
-  ...nullableTypesQuestions,
-  ...typeAliasesQuestions,
-  ...mappedTypesQuestions,
-  ...conditionalTypesQuestions,
-  ...decoratorsQuestions,
-  ...utilityTypesQuestions,
-  ...moduleAugmentationQuestions,
-  ...namespacesQuestions,
-  ...advancedGenericsQuestions,
-  ...mixinsQuestions,
-  ...advancedTypesQuestions,
-];
+export const questions: Record<string, QuestionType[]> = {
+  typeAnnotationQuestions,
+  interfaceQuestions,
+  classesQuestions,
+  enumsQuestions,
+  genericsQuestions,
+  typeGuardsQuestions,
+  tuplesQuestions,
+  unionTypesQuestions,
+  intersectionTypesQuestions,
+  literalTypesQuestions,
+  nullableTypesQuestions,
+  typeAliasesQuestions,
+  mappedTypesQuestions,
+  conditionalTypesQuestions,
+  decoratorsQuestions,
+  utilityTypesQuestions,
+  moduleAugmentationQuestions,
+  namespacesQuestions,
+  advancedGenericsQuestions,
+  mixinsQuestions,
+  advancedTypesQuestions,
+};

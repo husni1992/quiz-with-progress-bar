@@ -5,6 +5,7 @@ html {
   height: 100%;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: larger;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -87,7 +88,11 @@ button:disabled {
 }
 
 .progress-bar {
-  height: 15px; /* Adjust height as needed */
+  color: #f4f4f4;
+  height: 25px; /* Adjust height as needed */
+  justify-content: center;
+  align-items: center;
+  display: flex;
   background-color: #9b9695;
   transition: width 0.4s ease;
 }
@@ -108,7 +113,6 @@ button:disabled {
     background: white;
     padding: 20px;
     border-radius: 5px;
-    text-align: center;
     max-width: 90%; /* Max width of modal content */
     max-height: 80vh; /* Max height of modal content */
     box-sizing: border-box;
@@ -125,6 +129,7 @@ button:disabled {
 /* Style for the #summary-content <pre> element to look like a code block */
 #summary-content {
   max-height: 50vh; /* Limit the height to 50% of the viewport height */
+  max-width: 30vw;
   overflow-y: auto; /* Add a vertical scrollbar if content is too long */
   background-color: #f7f7f7; /* Light grey background */
   border: 1px solid #ddd; /* Light grey border */
@@ -135,6 +140,7 @@ button:disabled {
   white-space: pre-wrap; /* Wrap content */
   word-break: break-word; /* Prevent overflow due to unbreakable text */
   font-family: "Courier New", Courier, monospace; /* Monospaced font for code */
+  font-size: medium;
 }
 
 button {
