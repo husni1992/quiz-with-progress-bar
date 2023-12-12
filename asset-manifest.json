@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/husni1992/quiz-with-progress-bar/static/css/main.d0d03955.css",
-    "main.js": "/husni1992/quiz-with-progress-bar/static/js/main.84703c93.js",
+    "main.css": "/husni1992/quiz-with-progress-bar/static/css/main.fa671d90.css",
+    "main.js": "/husni1992/quiz-with-progress-bar/static/js/main.f33033d1.js",
     "static/js/787.ce17e66c.chunk.js": "/husni1992/quiz-with-progress-bar/static/js/787.ce17e66c.chunk.js",
     "index.html": "/husni1992/quiz-with-progress-bar/index.html",
-    "main.d0d03955.css.map": "/husni1992/quiz-with-progress-bar/static/css/main.d0d03955.css.map",
-    "main.84703c93.js.map": "/husni1992/quiz-with-progress-bar/static/js/main.84703c93.js.map",
+    "main.fa671d90.css.map": "/husni1992/quiz-with-progress-bar/static/css/main.fa671d90.css.map",
+    "main.f33033d1.js.map": "/husni1992/quiz-with-progress-bar/static/js/main.f33033d1.js.map",
     "787.ce17e66c.chunk.js.map": "/husni1992/quiz-with-progress-bar/static/js/787.ce17e66c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0d03955.css",
-    "static/js/main.84703c93.js"
+    "static/css/main.fa671d90.css",
+    "static/js/main.f33033d1.js"
   ]
 }
